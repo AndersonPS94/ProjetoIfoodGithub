@@ -6,10 +6,10 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.aulaifood.domain.model.FiltroCategoria
-import com.example.aulaifood.domain.model.Loja
-import com.example.aulaifood.presentation.ui.adapter.FiltroCategoriaAdapter
-import com.example.aulaifood.presentation.ui.adapter.LojasAdapter
+import com.example.projetoifoodgithub.Home.data.model.FiltroCategoria
+import com.example.projetoifoodgithub.Home.data.model.Loja
+import com.example.projetoifoodgithub.Home.presentation.UI.adapter.FiltroCategoriaAdapter
+import com.example.projetoifoodgithub.Home.presentation.UI.adapter.LojasAdapter
 import com.example.projetoifoodgithub.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

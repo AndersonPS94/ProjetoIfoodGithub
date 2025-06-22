@@ -1,10 +1,10 @@
-package com.example.aulaifood.presentation.ui.adapter
+package com.example.projetoifoodgithub.Home.presentation.UI.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.aulaifood.domain.model.Loja
+import com.example.projetoifoodgithub.Home.data.model.Loja
 import com.example.projetoifoodgithub.databinding.ItemRvLojasBinding
 import com.example.projetoifoodgithub.databinding.ItemRvUltimasLojasBinding
 import com.squareup.picasso.Picasso

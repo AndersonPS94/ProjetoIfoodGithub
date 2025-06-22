@@ -1,4 +1,4 @@
-package com.example.aulaifood.domain.model
+package com.example.projetoifoodgithub.Home.data.model
 
 data class FiltroCategoria(
     val nome: String,

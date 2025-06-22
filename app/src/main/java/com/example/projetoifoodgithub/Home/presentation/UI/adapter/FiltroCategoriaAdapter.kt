@@ -1,10 +1,10 @@
-package com.example.aulaifood.presentation.ui.adapter
+package com.example.projetoifoodgithub.Home.presentation.UI.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.example.aulaifood.domain.model.FiltroCategoria
+import com.example.projetoifoodgithub.Home.data.model.FiltroCategoria
 import com.example.projetoifoodgithub.databinding.ItemRvFiltroCategoriaBinding
 import com.squareup.picasso.Picasso
 
