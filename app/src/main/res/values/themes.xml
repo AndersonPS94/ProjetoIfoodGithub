@@ -6,4 +6,32 @@
     </style>
 
     <style name="Theme.ProjetoIfoodGithub" parent="Base.Theme.ProjetoIfoodGithub" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style name="IconOnlyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="iconTint">@color/red</item>
+    </style>
+
 </resources>
