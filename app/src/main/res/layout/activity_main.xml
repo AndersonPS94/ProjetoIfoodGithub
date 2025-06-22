@@ -1,130 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".presentation.ui.activity.LoginActivity">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.6" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="32dp"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/guideline"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/btnVoltar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/f2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/capa_login" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Falta pouco para matar \n sua fome"
-            android:textAlignment="center"
-            android:textSize="20sp"
+            android:text="Confirmação de pedido"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline" />
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/btnVoltar"
+            app:layout_constraintTop_toTopOf="@id/btnVoltar"
+            android:layout_marginStart="8dp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLoginEmail"
-            android:layout_width="0dp"
-            android:layout_height="61dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:endIconMode="clear_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:startIconDrawable="@android:drawable/sym_action_email">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editLoginEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Digite seu E-mail"
-                android:inputType="text|textEmailAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLoginSenha"
+        <TextView
+            android:id="@+id/txtItemTitulo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:endIconMode="password_toggle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:text="Itens adicionados"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnVoltar"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLoginEmail"
-            app:startIconDrawable="@drawable/baseline_password_24">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editLoginSenha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Digite sua senha"
-                android:inputType="text|textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/txtItemDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Big Five\nOs cinco aperitivos mais pedidos da casa\nR$ 89,90"
+            app:layout_constraintTop_toBottomOf="@id/txtItemTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/f1"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtItemDescricao" />
+
+
+        <TextView
+            android:id="@+id/txtEnderecoTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Entregar no endereço"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/imgItem"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtEndereco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Avenida Paulista, 1034, Sumaré"
+            app:layout_constraintTop_toBottomOf="@id/txtEnderecoTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:id="@+id/txtPagamento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pagamento"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txtEndereco"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+
+
+        <TextView
+            android:id="@+id/txtCartao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp"
+            android:text="Cartão de crédito"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPagamento" />
+
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnAdicionarPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F00404"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtCartao"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:id="@+id/txtResumo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/Entrar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            android:text="Resumo dos valores\nSubtotal: R$ 100,00\nTaxa de entrega: R$ 6,90\nTotal: R$ 106,90"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnAdicionarPagamento"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLoginSenha" />
+            android:layout_marginTop="24dp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Não tem conta?"
-            app:layout_constraintEnd_toStartOf="@+id/textCadastro"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="packed"
+            android:text="Confirmar Pedido"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FA0C0C"
+            app:layout_constraintTop_toBottomOf="@id/txtResumo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
-
-        <TextView
-            android:id="@+id/textCadastro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/Cadastrar"
-            android:textColor="@color/primaria"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+            android:layout_marginTop="32dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
