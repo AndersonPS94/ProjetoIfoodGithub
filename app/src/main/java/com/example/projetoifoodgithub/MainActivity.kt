@@ -9,7 +9,9 @@ import com.example.projetoifoodgithub.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -18,20 +20,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         logarUsuario()
-        cadastrarUsuario()
-
     }
 
     private fun logarUsuario() {
         binding.editLoginEmail.text
         binding.editLoginSenha.text
 
-        //ADICIONAR A LOGICA DO LOGIN AQUI
+        //adicionar a logica da tela da loja pelo usuario 2 aqui
         binding.btnLogin.setOnClickListener {}
     }
 
-    //ADICIONAR A LOGICA DO CADASTRO AQUI, CASO FEITA
-    private fun cadastrarUsuario() {
-        binding.textCadastro.setOnClickListener {}
-    }
+
 }
