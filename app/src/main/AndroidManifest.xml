@@ -16,6 +16,7 @@
             android:name=".Login.LoginActivity"
             android:exported="true">
             <intent-filter>
+                <activity android:name=".Login.ConfirmacaoPedidoActivity" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
