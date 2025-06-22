@@ -1,12 +1,11 @@
-package com.example.projetoifoodgithub
+package com.example.projetoifoodgithub.Login
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.projetoifoodgithub.databinding.ActivityMainBinding
 
-
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
