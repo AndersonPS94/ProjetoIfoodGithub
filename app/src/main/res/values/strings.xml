@@ -1,16 +1,30 @@
 <resources>
     <string name="app_name">projetoIfoodGithub</string>
-
-
-
-
-
-
-
-
-
-
-
     <string name="titleProduct">AULA combo Hambuerguer = batat + MilkShake</string>
     <string name="descritionProduct">Combo completo para animar seu final de semana</string>
+    <string name="Entrar">Entrar</string>
+    <string name="Cadastrar">Cadastre-se</string>
+    <string name="erro_cadastro_nome">Digite um nome válido, com no mínimo 6 letras</string>
+    <string name="erro_cadastro_email">Digite um email válido</string>
+    <string name="erro_cadastro_senha">Digite uma senha válida, com no mínimo 6 caracteres</string>
+    <string name="erro_cadastro_telefone">Digite um telefone válido</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
