@@ -260,13 +260,13 @@
         android:scaleType="centerCrop"
         android:src="@drawable/hambuger_casa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/shapeImageView5"
-        app:layout_constraintTop_toBottomOf="@+id/shapeImageView5"
+        app:layout_constraintStart_toStartOf="@+id/shapeImagePedido"
+        app:layout_constraintTop_toBottomOf="@+id/shapeImagePedido"
         app:shapeAppearanceOverlay="@style/CantosArredondados"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/shapeImageView5"
+        android:id="@+id/shapeImagePedido"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
