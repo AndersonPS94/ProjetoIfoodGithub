@@ -1,6 +1,13 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+
+
+
+
+
+    id("kotlin-parcelize")
 }
 
 android {
@@ -39,6 +46,15 @@ android {
 }
 
 dependencies {
+
+    //Picasso
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    // lib permissoes
+    implementation("com.guolindev.permissionx:permissionx:1.8.1")
+
+    //Slider
+    implementation(libs.imageslideshow)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
