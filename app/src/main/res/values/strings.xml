@@ -1,40 +1,15 @@
 <resources>
-    <string name="app_name">AulaIfood</string>
+    <string name="app_name">projetoIfoodGithub</string>
+    <string name="titleProduct">AULA combo Hambuerguer = batat + MilkShake</string>
+    <string name="descritionProduct">Combo completo para animar seu final de semana</string>
     <string name="Entrar">Entrar</string>
     <string name="Cadastrar">Cadastre-se</string>
     <string name="erro_cadastro_nome">Digite um nome válido, com no mínimo 6 letras</string>
     <string name="erro_cadastro_email">Digite um email válido</string>
     <string name="erro_cadastro_senha">Digite uma senha válida, com no mínimo 6 caracteres</string>
     <string name="erro_cadastro_telefone">Digite um telefone válido</string>
-    <!--Criado detalhes_restaurante-->
-    <string name="e_mail">Digite seu e-mail</string>
-    <string name="password">Digite sua senha</string>
-    <string name="falta_pouco">"Falta pouco para matar "</string>
-    <string name="sua_fome">sua fome</string>
-    <string name="enviar">Enviar</string>
-    <string name="cadastre_se">Não tem conta? Catastre-se!</string>
-    <string name="Outbacksteakhouse">Outback steakhouse</string>
-    <string name="ic_restaurante">Restaurante</string>
-    <string name="ic_destaques">Destaques</string>
-    <string name="ic_hamburger">ImagemHamburger</string>
-    <string name="ic_frango_especial">Frango especial</string>
-    <string name="c_combo_hamburger">Combo Hamburgerr</string>
-    <string name="ic_preco">R$59,90</string>
-    <string name="ic_preco2">R$79,90</string>
-    <string name="ic_preco3">R$20,90</string>
-    <string name="ic_preco4">R$30,90</string>
-    <string name="ic_preco5">R$24,90</string>
-    <string name="ic_preco6">R$25,90</string>
-    <string name="batata_frita">+ Batata + Milk Shake</string>
-    <string name="trunder_brownie">Thunder Brownie </string>
-    <string name="ic_produtos">Produtos</string>
-    <string name="big_five">Big Five</string>
-    <string name="os_cinco_aperitivos">Os cincos Aperitivos mais pedidos da casa</string>
-    <string name="em_unico_prato">em unico prato</string>
-    <string name="preco_unico">R$ 89,90</string>
-    <string name="hamburger_casa">Hamburger da casa</string>
-    <string name="hamburger_especial">Hamburger com batata especial da casa</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
