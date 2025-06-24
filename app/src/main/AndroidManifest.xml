@@ -18,6 +18,9 @@
         <activity
             android:name=".Home.presentation.UI.activity.HomeActivity"
             android:name=".Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalhesRestauranteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
