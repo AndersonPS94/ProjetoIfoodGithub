@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projetoifoodgithub.Home.presentation.UI.activity.HomeActivity
 import com.example.projetoifoodgithub.databinding.ActivityMainBinding
 
 class LoginActivity : AppCompatActivity() {

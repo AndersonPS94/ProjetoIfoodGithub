@@ -1,8 +1,10 @@
 package com.example.projetoifoodgithub
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projetoifoodgithub.Login.ConfirmacaoPedidoActivity
 import com.example.projetoifoodgithub.databinding.ActivityProductsRequestBinding
 
 class ProductsRequest : AppCompatActivity() {
@@ -17,7 +19,6 @@ class ProductsRequest : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProductsRequestBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //validaCompra()
 
         //PICLES
         binding.btnPiclesMais.setOnClickListener {
@@ -49,9 +50,8 @@ class ProductsRequest : AppCompatActivity() {
         }
 
         binding.btnConfirmar.setOnClickListener {
-            /*val intent = Intent(this, DashMenuActivity::class.java)
+            val intent = Intent(this, ConfirmacaoPedidoActivity::class.java)
             startActivity(intent)
-            finish()*/
         }
 
         //QUANTIDADE TOTAL
@@ -75,11 +75,5 @@ class ProductsRequest : AppCompatActivity() {
         val contaTotal = counterAuxiliar + (counterTotal * valorCombo)
         binding.txtPrecoTotalInChangeProducts.text = String.format("RS%20d", contaTotal)
     }
-
-
-    /*private fun validaCompra(){
-        val intent = Intent(this, ConfirmacaoPedidoActivity::class.java)
-        startActivity(intent)
-    }*/
 
 }
