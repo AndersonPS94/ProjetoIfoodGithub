@@ -25,16 +25,17 @@
         </activity>
         <activity
             android:name=".Home.presentation.UI.activity.HomeActivity"
+            android:launchMode="singleTop"
             android:exported="false" />
         <activity
             android:name=".ProductsRequest"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".DetalhesRestauranteActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".Login.ConfirmacaoPedidoActivity"
-            android:exported="false" />
+            android:exported="false"/>
     </application>
 
 </manifest>

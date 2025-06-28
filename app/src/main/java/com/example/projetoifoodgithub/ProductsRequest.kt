@@ -20,6 +20,10 @@ class ProductsRequest : AppCompatActivity() {
         binding = ActivityProductsRequestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+            binding.btnBack.setOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
+
         //PICLES
         binding.btnPiclesMais.setOnClickListener {
                 counterPicles++
