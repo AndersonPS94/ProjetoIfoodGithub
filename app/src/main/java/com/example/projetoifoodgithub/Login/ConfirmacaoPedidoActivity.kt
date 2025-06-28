@@ -18,9 +18,9 @@ class ConfirmacaoPedidoActivity : AppCompatActivity() {
         }
 
         binding.txtResumo.text = """Resumo dos valores
-Subtotal: R$ 100,00
-Taxa de entrega: R$ 6,90
-Total: R$ 106,90""".trimIndent()
+            Subtotal: R$ 100,00
+            Taxa de entrega: R$ 6,90
+            Total: R$ 106,90""".trimIndent()
 
         binding.btnAdicionarPagamento.setOnClickListener {
 
